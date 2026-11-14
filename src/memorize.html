@@ -1,0 +1,67 @@
+<header class="sec">
+  <h1 style="font-size:clamp(1.6rem,1.2rem+2.4vw,2.6rem);margin-bottom:.3em">{{I brain icolor-c}} 速记中心</h1>
+  <p class="lead" style="font-size:1rem">闪卡、小测验和一页可打印摘要。进度只在这台设备的浏览器里。问83–85的填空文字来自语料，其余卡片是作者编写的大意。</p>
+  <div class="chips no-print"><a class="chip gold" href="#h-cards">闪卡</a><a class="chip grace" href="#h-quiz">测验</a><a class="chip water" href="#h-spaced">间隔复习</a><a class="chip creed" href="#h-creedquiz">信经测验</a><a class="chip rose" href="#h-print">打印摘要</a></div>
+</header>
+<section class="sec no-print" id="s-cards">
+  <h2 id="h-cards"><span class="num">1</span>闪卡</h2>
+  <p>点击卡片翻面；点填空显示答案；然后选“记得”“模糊”或“忘了”。</p>
+  <div class="ctrl" role="group" aria-label="选择卡组">
+    <button class="hbtn" data-deck="heads" aria-pressed="true" type="button">三个要点</button>
+    <button class="hbtn" data-deck="texts" aria-pressed="false" type="button">经文大意</button>
+    <button class="hbtn" data-deck="concepts" aria-pressed="false" type="button">概念</button>
+    <button class="hbtn" data-deck="hc31" aria-pressed="false" type="button">问83–85填空</button>
+    <button class="hbtn" data-deck="creed" aria-pressed="false" type="button">信经下一句</button>
+    <button class="hbtn" data-deck="all" aria-pressed="false" type="button">全部</button>
+  </div>
+  <div class="bar" aria-hidden="true"><i id="fc-bar"></i></div>
+  <p class="muted small" id="fc-stat" style="font-family:var(--sans);text-align:center"></p>
+  <div class="fc" id="fc" tabindex="0" role="button" aria-label="闪卡，点击翻面"><div class="fc-in">
+    <div class="fc-face fc-front"><span class="k" id="fc-k"></span><div class="q" id="fc-q"></div><span class="muted small" id="fc-box" style="font-family:var(--sans)"></span></div>
+    <div class="fc-face fc-back"><span class="k">答案</span><div id="fc-a"></div></div>
+  </div></div>
+  <div class="ctrl"><button class="btn sm line" data-grade="bad" type="button">✗ 忘了</button><button class="btn sm line" data-grade="hard" type="button">△ 模糊</button><button class="btn sm" data-grade="good" type="button">✓ 记得</button><button class="btn sm line" id="fc-skip" type="button">跳过</button><button class="btn sm line" id="fc-reset" type="button">重置进度</button></div>
+</section>
+<section class="sec no-print" id="s-quiz">
+  <h2 id="h-quiz"><span class="num">2</span>讲章小测验</h2>
+  <div class="card quiz" id="quiz-ser"><div class="q-text"></div><div class="q-opts"></div><div class="q-fb" role="status"></div><div class="ctrl"><span class="q-score"></span><button class="btn sm q-next" type="button" hidden>下一题</button></div></div>
+</section>
+<section class="sec no-print" id="s-creedquiz">
+  <h2 id="h-creedquiz"><span class="num">3</span>信经测验</h2>
+  <div class="card quiz" id="quiz-creed">
+    <div class="ctrl" style="justify-content:flex-start"><select aria-label="选择信经"><option value="apostles">使徒信经</option><option value="nicene">尼西亚信经</option><option value="athanasian">亚他那修信经</option></select>
+    <span class="seg" role="group" aria-label="题型"><button type="button" data-kind="next" aria-pressed="true">下一句</button><button type="button" data-kind="order" aria-pressed="false">排顺序</button></span></div>
+    <div class="q-text"></div><div class="q-opts"></div><div class="q-fb" role="status"></div><div class="ctrl"><span class="q-score"></span><button class="btn sm q-next" type="button" hidden>下一题</button></div>
+  </div>
+</section>
+<section class="sec no-print" id="s-spaced">
+  <h2 id="h-spaced"><span class="num">4</span>间隔复习</h2>
+  <div class="tbl-wrap min2 rv"><table>
+   <thead><tr><th>时间</th><th>内容</th><th>时长</th></tr></thead><tbody>
+   <tr><td>第0天</td><td>读一屏总览；说出三个要点和一句话总结</td><td>15分钟</td></tr>
+   <tr><td>第1天</td><td>问83–84填空；用自己的话说开门与关门</td><td>10分钟</td></tr>
+   <tr><td>第3天</td><td>问85填空；画出安全岔口在步骤之前</td><td>10分钟</td></tr>
+   <tr><td>第7天</td><td>看<a href="keys.html">专题</a>；说出第5节两种主线读法</td><td>15分钟</td></tr>
+   <tr><td>第14天</td><td>全部卡片；能说明林后2章的人身分仍有争论</td><td>10分钟</td></tr>
+   <tr><td>第30天</td><td>从出12走到林前5，再说四个闭环各一句</td><td>15分钟</td></tr>
+  </tbody></table></div>
+</section>
+<section class="sec" id="s-print">
+  <h2 id="h-print" class="no-print"><span class="num">5</span>一页可打印摘要</h2>
+  <p class="no-print"><button class="btn" type="button" data-print>{{I print}} 打印 / 存为 PDF</button></p>
+  <div class="print-sheet">
+    <h3>基督掌管天国的门 · 林前5 · 主日31</h3>
+    <p><b>一句</b>：天国的门在为罪人被杀的羔羊基督手里。福音向悔改信靠的人敞开，纪律向顽梗的人关上，关门是为了把人领回来。</p>
+    <table><thead><tr><th>要点</th><th>一句话</th><th>钩子</th></tr></thead><tbody>
+      <tr><td>① 开门</td><td>先有羊，后除酵</td><td>问84；林前5:7–8 大意</td></tr>
+      <tr><td>② 关门</td><td>劝、呈报、停餐、除外</td><td>问85；林前5:1–5 大意</td></tr>
+      <tr><td>③ 挽回</td><td>悔改就接纳；弱者不必付安全</td><td>问85末；林后2章大意</td></tr>
+    </tbody></table>
+    <p><b>口诀</b>：开门 · 关门 · 挽回。不审判全城 · 不咒人下地狱 · 不向受害者收费。</p>
+    {{SENT HC 83 answer | 就是神圣福音的宣讲和教会的纪律}}
+    <p class="muted small">框内引文来自 ccifellowship.org 语料。经文请对照圣经。威斯敏斯特标准不在本页逐字引用。</p>
+  </div>
+</section>
+{{DATA creeds}}
+{{DATA hc31}}
+<script type="application/json" id="cards-data">{"heads":[{"tag":"要点①","q":"第一点叫什么？","a":"福音打开门。问84。信的人听见赦免，不靠本周表现购买入场。"},{"tag":"要点②","q":"第二点叫什么？","a":"纪律关上门。问85的前半。劝、呈报、停餐、除外。不审判全城。"},{"tag":"要点③","q":"第三点叫什么？","a":"管教为挽回。悔改就重新接纳。受害者不必用安全换和解。"},{"tag":"题目","q":"讲题、经文、要理？","a":"基督掌管天国的门。林前5章。主日31，问83–85。"},{"tag":"一句","q":"一句话总结？","a":"门在被杀的羔羊基督手里。福音向悔改信靠的人开，纪律向顽梗的人关，关门是为了把迷失的人领回来。"},{"tag":"口诀","q":"三个方向？","a":"开门，关门，挽回。84看宣告，85看步骤与恢复。"}],"texts":[{"q":"林前5:1–2 大意？","a":"有人与父亲的妻子同居。教会自高，却不哀恸，也不把人除去。"},{"q":"林前5:3–5 大意？","a":"聚会中奉主的名把他交出去，使肉体受亏损，灵可以在主的日子得救。目的句不可删。"},{"q":"林前5:6–8 大意？","a":"一点酵能使全团发起来。清除旧酵。基督是逾越节的羊，已经被杀。用诚实守节。"},{"q":"林前5:9–13 大意？","a":"不是离开世界。不要与称为弟兄却活在那些罪里的人亲密同席。审判外人是神的事。"},{"q":"太18:15–20 大意？","a":"私下指出，再带人，然后告诉教会。仍不听，才看待如外人。不安全的案件不从私下对质开始。"},{"q":"林后2:5–11 大意？","a":"责罚够了就要饶恕、安慰。那人是否即林前5章的人，仍有争论。"}],"concepts":[{"q":"第5节的两条主线？","a":"加尔文：除名，今世的责罚对照永远的拯救。另一种：犯罪的生活方式被拆毁，人仍要得救。都不是咒人下地狱。"},{"q":"1563与1568的差别？","a":"1563年要理印行，其中有钥匙的教导。1568年才是威瑟斯与伊拉斯都的辩论。不要合成同一天。"},{"q":"伊拉斯都主义？","a":"大英百科：后来这个绰号不是他教过的国家至上论。他的论点限于基督教社会里刑罚归长官。"},{"q":"林后2章的人？","a":"传统读法把他看成林前5章之后悔改的人。另一读法指向另一封信里的冒犯。身分未定，挽回的目的已定。"},{"q":"教会与政府？","a":"教会停餐、除外、恢复。政府调查与刑罚。一种程序不能吞掉另一种。"},{"q":"威斯敏斯特在本站怎样出现？","a":"只在专题页作标明为概述的第三十章，不逐字引用。"}],"quiz":[{"q":"本讲章对应海德堡哪一主日？","opts":["主日29","主日30","主日31","主日32"],"a":2,"why":"主日31是问83–85。主日30是上一主日。"},{"q":"第5节的目的句指向什么？","opts":["叫他的灵可以得救","叫教会出气","叫撒但收他为徒","叫疾病自动证明隐罪"],"a":0,"why":"目的句把严厉收在挽回里。"},{"q":"加尔文怎样读“交给撒但”？","opts":["主要是身体被击打","就是逐出教会","是永远的灭亡","是私人的诅咒"],"a":1,"why":"他报告了身体责罚的古读法，但自己改采除名。"},{"q":"判断外人是谁的事？","opts":["教会的会员大会","神","群聊","诗班"],"a":1,"why":"第12–13节把外人交给神。教会判断的是里面的人。"},{"q":"虐待案件的第一步？","opts":["强迫受害者私下对质","先保护并按法律报告","先在主日点名","先停全体的圣餐"],"a":1,"why":"马太福音18章的私下步骤假定对质是安全的。"},{"q":"1568年在争论什么？","opts":["要理是否已经付印","基督教邦国里谁能除名与停餐","希腊文无酵饼的配料","信经要不要合成一份"],"a":1,"why":"要理在1563年已经印行。1568年是纪律权柄之争。"},{"q":"林后2章那人的身分？","opts":["经文写明就是林前5章的人","经文写明绝不是他","仍有争论，挽回的目的清楚","没有人讨论过"],"a":2,"why":"加尔文连读两处；另有读者指向另一封信。本站不定案。"},{"q":"软弱仍回头的人，门怎样？","opts":["按跌倒次数永远关闭","仍在开门的宣告之下，与顽梗不同","不必承认罪","必须先感到自己配得"],"a":1,"why":"关门针对听了仍不改的人，不是针对每一次软弱。"}]}</script>
