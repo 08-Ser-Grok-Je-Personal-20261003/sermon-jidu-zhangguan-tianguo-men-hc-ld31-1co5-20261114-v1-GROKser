@@ -430,6 +430,7 @@ html[data-theme="dark"] .quiz .q-opts button.good{background:#123828;color:#d9ff
 html[data-theme="dark"] .quiz .q-opts button.bad{background:#3a1820;color:#ffd5d8}
 .q-fb.ok{color:var(--grace)} .q-fb.no{color:var(--blood)}
 .spine{border:1px solid var(--line);border-radius:18px;background:var(--panel);padding:1rem;margin:0 0 1.2rem}
+.spine-lead{margin:0 0 .75rem;font:700 1.02rem/1.45 var(--sans);color:var(--text)}
 .spine-bar{display:flex;flex-wrap:wrap;gap:.45rem;margin:0 0 .8rem}
 .spine-bar button{font:700 .88rem var(--sans);border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:999px;padding:.4rem .8rem;cursor:pointer}
 .spine-bar button[aria-pressed="true"],.viz-bar button[aria-pressed="true"]{background:var(--gold-2);color:var(--on-accent);border-color:var(--gold)}
